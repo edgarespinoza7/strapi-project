@@ -1,12 +1,10 @@
-import styles from "./page.module.css";
+import React from 'react'
 
-
-
-export default function Home() {
+export default function About() {
   return (
-    <div className={styles.page}>
-      <h1 className='text-3xl font-bold text-center mb-6'>Strapi Project</h1>
+    <div>
+      <h1 className='text-3xl font-bold text-center mb-6'>About</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, commodi autem ex aspernatur temporibus expedita facere cupiditate odit voluptatum maxime suscipit fuga nulla repellat dolorem asperiores, recusandae soluta architecto? Necessitatibus!</p>
     </div>
-  );
+  )
 }
