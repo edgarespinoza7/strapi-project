@@ -23,8 +23,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className="bg-gray-200 min-h-[100dvh] grid grid-rows-[auto_1fr_auto]">
+          <div className="absolute z-0 inset-0 overflow-hidden">
+            <div className="circle-one w-64 h-64 rounded-full bg-rose-400/60 top-0 right-28 absolute blur-3xl"></div>
+            <div className="circle-two w-64 h-64 rounded-full bg-blue-400/60 bottom-0 left-28 absolute blur-3xl"></div>
+          </div>
           <Header />
-          <main className="max-w-5xl m-6 bg-white/50 mx-auto py-7 px-4 rounded-lg shadow-md overflow-hidden">
+          <main className="max-w-5xl m-6 bg-white/50 mx-auto py-7 px-4 rounded-lg shadow-md overflow-hidden z-10 backdrop-blur">
             {children}
           </main>
           <Footer />
